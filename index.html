@@ -1,89 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lotus Light Buddhist Monastery</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-<div class="top-bar">
-    <div class="contact-info">
-        <span><i class="fas fa-phone"></i> +44 20 0000 0000</span>
-        <span><i class="fas fa-envelope"></i> info@lotuslightmonastery.org</span>
-    </div>
-
-    <div class="social-links">
-        <a href="https://facebook.com" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://youtube.com" target="_blank">
-            <i class="fab fa-youtube"></i>
-        </a>
-        <a href="mailto:info@lotuslightmonastery.org">
-            <i class="fas fa-envelope"></i>
-        </a>
-    </div>
-</div>
-<header>
-    <h1>Lotus Light Buddhist Monastery</h1>
-    <p>“Cultivating Wisdom, Compassion, and Inner Peace.”</p>
-</header>
-
-<nav>
-    <a href="#home">Home</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#events">Events</a>
-    <a href="#about">About Us</a>
-    <a href="#contact">Contact Us</a>
-</nav>
-
-<!-- HOME -->
-<section id="home">
-    <h2>Welcome</h2>
-    <div class="card">
-        <p>
-            Welcome to Lotus Light Buddhist Monastery, a peaceful sanctuary
-            dedicated to meditation, wisdom, and compassionate living.
-        </p>
-    </div>
-</section>
-
-<!-- GALLERY -->
-<section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773" alt="Monastery">
-        <img src="https://images.unsplash.com/photo-1512632578888-169bbbc64f33" alt="Meditation">
-        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Nature">
-        <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88" alt="Temple">
-    </div>
-</section>
-
-<!-- EVENTS -->
-<section id="events">
-    <h2>Upcoming Events</h2>
-    <div class="card">
-        <h3>Monthly Silent Retreat</h3>
-        <p>Date: 15–17 June 2026</p>
-        <p>Join us for meditation, mindful walking, and Dharma teachings.</p>
-    </div>
-
-    <div class="card">
-        <h3>Vesak Celebration</h3>
-        <p>Date: 25 May 2026</p>
-        <p>A day of chanting, offerings, and community gathering.</p>
-    </div>
-</section>
-
-<!-- ABOUT -->
-<!DOCTYPE html>
-<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us | Lotus Light Monastery</title>
+<title>Lotus Light Monastery</title>
 <link rel="stylesheet" href="styles.css">
 <!-- Font Awesome for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -96,7 +16,6 @@
         <span><i class="fas fa-phone"></i> +44 20 0000 0000</span>
         <span><i class="fas fa-envelope"></i> info@lotuslightmonastery.org</span>
     </div>
-
     <div class="social-links">
         <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -104,79 +23,62 @@
     </div>
 </div>
 
-<!-- MAIN HEADER -->
+<!-- HEADER -->
 <header>
-    <h1>About Lotus Light Monastery</h1>
-    <p>Discover our history, leadership, and spiritual mission.</p>
+    <h1>Lotus Light Buddhist Monastery</h1>
+    <p>Cultivating Wisdom, Compassion, and Inner Peace</p>
 </header>
 
 <!-- NAVIGATION -->
 <nav>
-    <a href="index.html">Home</a>
+    <a href="index.html" class="active">Home</a>
     <a href="gallery.html">Gallery</a>
     <a href="events.html">Events</a>
-    <a href="about.html" class="active">About Us</a>
+    <a href="about.html">About Us</a>
     <a href="contact.html">Contact Us</a>
 </nav>
 
-<!-- TABS SECTION -->
-<main class="about-page">
-
-    <div class="tabs">
-        <button class="tab-link active" onclick="openTab(event, 'founding')">Founding Members</button>
-        <button class="tab-link" onclick="openTab(event, 'ama')">Ama Samhuma</button>
-        <button class="tab-link" onclick="openTab(event, 'xyz')">XYZ</button>
-    </div>
-
-    <div class="tab-content">
-        <div id="founding" class="tab-section" style="display: block;">
-            <h2>Founding Members</h2>
-            <p>
-                Lotus Light Monastery was founded by devoted spiritual teachers 
-                dedicated to spreading compassion, wisdom, and mindfulness.
-            </p>
-        </div>
-
-        <div id="ama" class="tab-section">
-            <h2>Ama Samhuma</h2>
-            <p>
-                Ama Samhuma is a respected spiritual guide known for her teachings 
-                on peace, meditation, and community harmony.
-            </p>
-        </div>
-
-        <div id="xyz" class="tab-section">
-            <h2>XYZ</h2>
-            <p>
-                XYZ plays a vital role in guiding the monastery’s programs, 
-                charitable activities, and spiritual events.
-            </p>
-        </div>
-    </div>
-
-</main>
-
-
-<!-- CONTACT -->
-<section id="contact">
-    <h2>Contact Us</h2>
+<!-- MAIN CONTENT -->
+<section class="home-section">
+    <h2>Welcome</h2>
     <div class="card">
-        <form id="contactForm">
-            <label>Name</label>
-            <input type="text" id="name" required>
-
-            <label>Email</label>
-            <input type="email" id="email" required>
-
-            <label>Message</label>
-            <textarea id="message" rows="5" required></textarea>
-
-            <button type="submit">Send Message</button>
-            <p id="formMessage"></p>
-        </form>
+        <p>
+            Welcome to our monastery, a peaceful sanctuary dedicated to meditation 
+            and spiritual development. Explore our history, events, and community.
+        </p>
     </div>
 </section>
 
+<!-- ABOUT US ACCORDION -->
+<section class="about-us">
+  <h2>About Us</h2>
+
+  <button class="accordion">Founding Members</button>
+  <div class="panel">
+    <p>
+      Lotus Light Monastery was founded by devoted spiritual teachers 
+      dedicated to spreading compassion, wisdom, and mindfulness.
+    </p>
+  </div>
+
+  <button class="accordion">Ama Samuha</button>
+  <div class="panel">
+    <p>
+      Ama Samuha is a respected spiritual guide known for her teachings 
+      on peace, meditation, and community harmony.
+    </p>
+  </div>
+
+  <button class="accordion">XYZ</button>
+  <div class="panel">
+    <p>
+      XYZ plays a vital role in guiding the monastery’s programs, 
+      charitable activities, and spiritual events.
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
     <p>© 2026 Lotus Light Buddhist Monastery</p>
 </footer>
