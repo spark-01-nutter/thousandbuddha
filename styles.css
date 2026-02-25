@@ -115,3 +115,79 @@ nav a.active {
 header {
     padding: 50px 20px;
 }
+/* TOP BAR */
+.top-bar {
+    background: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    font-size: 14px;
+}
+
+.contact-info span {
+    margin-right: 20px;
+}
+
+.social-links a {
+    color: white;
+    margin-left: 15px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: gold;
+}
+
+/* ABOUT PAGE HEADER */
+header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* TABS */
+.tabs {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.tab-link {
+    background-color: #8c6b2f;
+    color: white;
+    padding: 12px 25px;
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.tab-link:hover {
+    background-color: #6f5424;
+}
+
+.tab-link.active {
+    background-color: #e6d5b8;
+    color: #8c6b2f;
+    font-weight: bold;
+}
+
+.tab-section {
+    display: none;
+    padding: 30px 20px;
+    background-color: #fdfaf3;
+    border: 1px solid #eee;
+    border-top: none;
+    max-width: 900px;
+    margin: auto;
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+}
+
+.tab-section h2 {
+    color: #8b5e3c;
+    margin-bottom: 15px;
+}
