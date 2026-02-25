@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About Us | Lotus Light Monastery</title>
 <link rel="stylesheet" href="styles.css">
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body> 
+<body>
+
+<!-- TOP BAR -->
 <div class="top-bar">
     <div class="contact-info">
         <span><i class="fas fa-phone"></i> +44 20 0000 0000</span>
@@ -14,41 +18,71 @@
     </div>
 
     <div class="social-links">
-        <a href="https://facebook.com" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://youtube.com" target="_blank">
-            <i class="fab fa-youtube"></i>
-        </a>
-        <a href="mailto:info@lotuslightmonastery.org">
-            <i class="fas fa-envelope"></i>
-        </a>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="mailto:info@lotuslightmonastery.org"><i class="fas fa-envelope"></i></a>
     </div>
 </div>
+
+<!-- MAIN HEADER -->
 <header>
-    <h1>About Us</h1>
+    <h1>About Lotus Light Monastery</h1>
+    <p>Discover our history, leadership, and spiritual mission.</p>
 </header>
 
+<!-- NAVIGATION -->
 <nav>
     <a href="index.html">Home</a>
     <a href="gallery.html">Gallery</a>
     <a href="events.html">Events</a>
-    <a href="about.html">About Us</a>
+    <a href="about.html" class="active">About Us</a>
     <a href="contact.html">Contact Us</a>
 </nav>
 
-<section>
-    <div class="card">
-        <p>
-            Lotus Light Monastery follows the Theravāda tradition,
-            offering teachings and meditation guidance to all seekers.
-        </p>
-    </div>
-</section>
+<!-- TABS SECTION -->
+<main class="about-page">
 
+    <div class="tabs">
+        <button class="tab-link active" onclick="openTab(event, 'founding')">Founding Members</button>
+        <button class="tab-link" onclick="openTab(event, 'ama')">Ama Samhuma</button>
+        <button class="tab-link" onclick="openTab(event, 'xyz')">XYZ</button>
+    </div>
+
+    <div class="tab-content">
+        <div id="founding" class="tab-section" style="display: block;">
+            <h2>Founding Members</h2>
+            <p>
+                Lotus Light Monastery was founded by devoted spiritual teachers 
+                dedicated to spreading compassion, wisdom, and mindfulness.
+            </p>
+        </div>
+
+        <div id="ama" class="tab-section">
+            <h2>Ama Samhuma</h2>
+            <p>
+                Ama Samhuma is a respected spiritual guide known for her teachings 
+                on peace, meditation, and community harmony.
+            </p>
+        </div>
+
+        <div id="xyz" class="tab-section">
+            <h2>XYZ</h2>
+            <p>
+                XYZ plays a vital role in guiding the monastery’s programs, 
+                charitable activities, and spiritual events.
+            </p>
+        </div>
+    </div>
+
+</main>
+
+<!-- FOOTER -->
 <footer>
     <p>© 2026 Lotus Light Buddhist Monastery</p>
 </footer>
+
+<!-- SCRIPT -->
+<script src="script.js"></script>
 
 </body>
 </html>
