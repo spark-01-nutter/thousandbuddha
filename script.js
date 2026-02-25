@@ -1,26 +1,26 @@
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-    e.preventDefault();
+// CONTACT FORM FUNCTIONALITY (if any form added later)
+document.addEventListener("DOMContentLoaded", function(){
 
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
-    const formMessage = document.getElementById("formMessage");
+  // ABOUT US ACCORDION
+  var acc = document.querySelectorAll(".about-us .accordion");
+  acc.forEach(function(button) {
+    button.addEventListener("click", function() {
+      // Close others
+      acc.forEach(function(other) {
+        if(other !== button){
+          other.classList.remove("active");
+          other.nextElementSibling.style.display = "none";
+        }
+      });
+      // Toggle this panel
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if(panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  });
 
-    if (name === "" || email === "" || message === "") {
-        formMessage.style.color = "red";
-        formMessage.textContent = "Please fill in all fields.";
-        return;
-    }
-
-    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-    if (!email.match(emailPattern)) {
-        formMessage.style.color = "red";
-        formMessage.textContent = "Please enter a valid email address.";
-        return;
-    }
-
-    formMessage.style.color = "green";
-    formMessage.textContent = "Thank you. Your message has been sent successfully.";
-
-    document.getElementById("contactForm").reset();
 });
