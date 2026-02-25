@@ -1,3 +1,4 @@
+/* GENERAL */
 body {
     margin: 0;
     font-family: Georgia, serif;
@@ -5,116 +6,6 @@ body {
     color: #333;
 }
 
-header {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('https://images.unsplash.com/photo-1506126613408-eca07ce68773') center/cover no-repeat;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-nav {
-    background-color: #8c6b2f;
-    text-align: center;
-    padding: 15px;
-}
-
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-section {
-    max-width: 1000px;
-    margin: auto;
-    padding: 60px 20px;
-}
-
-h2 {
-    color: #8c6b2f;
-}
-
-.card {
-    background: white;
-    padding: 25px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-/* GALLERY */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-}
-
-.gallery img {
-    width: 100%;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
-}
-
-/* FORM */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-top: 15px;
-    font-weight: bold;
-}
-
-input, textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    margin-top: 20px;
-    padding: 12px;
-    background-color: #8c6b2f;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #6f5424;
-}
-
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-/* Active page highlight */
-nav a.active {
-    background-color: white;
-    color: #8c6b2f;
-    padding: 8px 12px;
-    border-radius: 4px;
-}
-
-/* Smaller page header */
-header {
-    padding: 50px 20px;
-}
 /* TOP BAR */
 .top-bar {
     background: #222;
@@ -141,53 +32,106 @@ header {
     color: gold;
 }
 
-/* ABOUT PAGE HEADER */
+/* HEADER */
 header {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-/* TABS */
-.tabs {
-    text-align: center;
-    margin: 30px 0;
-}
-
-.tab-link {
-    background-color: #8c6b2f;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://images.unsplash.com/photo-1506126613408-eca07ce68773') center/cover no-repeat;
     color: white;
-    padding: 12px 25px;
-    margin: 0 5px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px 5px 0 0;
-    font-size: 16px;
-    transition: 0.3s;
+    text-align: center;
+    padding: 80px 20px;
 }
 
-.tab-link:hover {
-    background-color: #6f5424;
+/* NAVIGATION */
+nav {
+    background-color: #8c6b2f;
+    text-align: center;
+    padding: 15px;
 }
 
-.tab-link.active {
-    background-color: #e6d5b8;
-    color: #8c6b2f;
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
     font-weight: bold;
 }
 
-.tab-section {
-    display: none;
-    padding: 30px 20px;
-    background-color: #fdfaf3;
-    border: 1px solid #eee;
-    border-top: none;
-    max-width: 900px;
-    margin: auto;
-    border-radius: 0 0 8px 8px;
-    text-align: center;
+nav a.active {
+    background-color: white;
+    color: #8c6b2f;
+    padding: 8px 12px;
+    border-radius: 4px;
 }
 
-.tab-section h2 {
-    color: #8b5e3c;
-    margin-bottom: 15px;
+/* SECTIONS */
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ABOUT US ACCORDION */
+.about-us {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fdfaf3;
+  border-radius: 8px;
+}
+
+.about-us h2 {
+  text-align: center;
+  color: #8b5e3c;
+  margin-bottom: 30px;
+}
+
+.accordion {
+  background-color: #8c6b2f;
+  color: white;
+  cursor: pointer;
+  padding: 15px 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  font-size: 16px;
+  transition: 0.3s;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 10px;
+}
+
+.accordion:hover {
+  background-color: #6f5424;
+}
+
+.accordion.active {
+  background-color: #e6d5b8;
+  color: #8c6b2f;
+  font-weight: bold;
+}
+
+.panel {
+  padding: 0 20px;
+  display: none;
+  overflow: hidden;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-radius: 0 0 5px 5px;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
