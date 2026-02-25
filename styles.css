@@ -103,3 +103,15 @@ footer {
     text-align: center;
     padding: 20px;
 }
+/* Active page highlight */
+nav a.active {
+    background-color: white;
+    color: #8c6b2f;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+/* Smaller page header */
+header {
+    padding: 50px 20px;
+}
